@@ -1,7 +1,6 @@
 /*
     Inclusões
 */
-#include <iostream>
 #include <string>
 #include "header.h"
 
