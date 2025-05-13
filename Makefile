@@ -2,17 +2,17 @@
 # Criado por Caio Justino 30/04/2025
 
 CC = g++
-CPPFLAGS = -Wall -pedantic
+CPPFLAGS = -Wall -pedantic -ansi -g -O0
 
 TARGET = programa
 
 OBJS = main.cpp cliente.cpp conta_bancaria.cpp
 
 $(TARGET):
-	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET)
+	$(CC) $(CPPFLAGS) $(OBJS) -o $(TARGET)
 
 %.o: %.cpp header.h
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CPPFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(TARGET) *.o
